@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="j1" prefHeight="672.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.calcfx.control.TictacControl">
+    <children>
+        <Pane layoutX="14.0" layoutY="175.0" prefHeight="264.0" prefWidth="372.0">
+            <children>
+                <GridPane layoutX="13.0" layoutY="20.0" prefHeight="225.0" prefWidth="347.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Button fx:id="btn00" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="76.0" prefWidth="116.0" />
+                        <Button fx:id="btn01" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="77.0" prefWidth="116.0" GridPane.columnIndex="1" />
+                        <Button fx:id="btn02" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="74.0" prefWidth="115.0" GridPane.columnIndex="2" />
+                        <Button fx:id="btn10" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="74.0" prefWidth="116.0" GridPane.rowIndex="1" />
+                        <Button fx:id="btn11" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="74.0" prefWidth="116.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Button fx:id="btn12" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="83.0" prefWidth="115.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Button fx:id="btn20" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="75.0" prefWidth="116.0" GridPane.rowIndex="2" />
+                        <Button fx:id="btn21" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="74.0" prefWidth="116.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button fx:id="btn22" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accionButon" prefHeight="90.0" prefWidth="131.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                    </children>
+                </GridPane>
+            </children>
+        </Pane>
+        <Pane fx:id="nombj1" layoutX="418.0" layoutY="193.0" prefHeight="194.0" prefWidth="404.0">
+            <children>
+                <Button fx:id="iniciar" layoutX="108.0" layoutY="100.0" mnemonicParsing="false" onAction="#iniciarJuego" prefHeight="51.0" prefWidth="63.0" text="Iniciar" />
+                <Button fx:id="anular" layoutX="204.0" layoutY="100.0" mnemonicParsing="false" onAction="#anularJuego" prefHeight="51.0" prefWidth="73.0" text="Anular" />
+                <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="82.0" text="JUGADOR 1:" />
+                <Label layoutX="14.0" layoutY="51.0" text="JUGADOR 2:" />
+                <TextField fx:id="NombJ1" layoutX="107.0" layoutY="10.0" prefHeight="26.0" prefWidth="255.0" />
+                <TextField fx:id="NombJ2" layoutX="107.0" layoutY="46.0" prefHeight="26.0" prefWidth="255.0" />
+            </children></Pane>
+        <HBox layoutX="407.0" layoutY="307.0" prefHeight="206.0" prefWidth="425.0" />
+        <Pane layoutX="22.0" layoutY="414.0" prefHeight="242.0" prefWidth="372.0">
+            <children>
+                <Label fx:id="jugaturno" layoutX="120.0" layoutY="78.0" prefHeight="25.0" prefWidth="220.0" />
+                <Label fx:id="contador1" layoutX="137.0" layoutY="119.0" prefHeight="34.0" prefWidth="124.0" text=" " />
+                <Label fx:id="contador2" layoutX="137.0" layoutY="157.0" prefHeight="40.0" prefWidth="154.0" />
+                <Label fx:id="j1" layoutX="48.0" layoutY="119.0" prefHeight="34.0" prefWidth="63.0" text="JUGADOR 1:">
+                    <font>
+                        <Font name="Impact" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="j2" layoutX="48.0" layoutY="157.0" prefHeight="40.0" prefWidth="63.0" text="JUGADOR 2:">
+                    <font>
+                        <Font name="Impact" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="turjug" layoutX="43.0" layoutY="70.0" prefHeight="40.0" prefWidth="73.0" text="TURNO:">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="-247.0" layoutY="22.0" prefHeight="3.0" prefWidth="866.0" />
+            </children></Pane>
+        <Label layoutX="22.0" layoutY="26.0" prefHeight="70.0" prefWidth="465.0" text="Evidencia Unidad 1">
+            <font>
+                <Font name="Century" size="48.0" />
+            </font>
+        </Label>
+        <Label layoutX="22.0" layoutY="111.0" text="Nombre:">
+            <font>
+                <Font name="Calibri Light Italic" size="24.0" />
+            </font></Label>
+        <Label layoutX="123.0" layoutY="108.0" text="Juan Gabriel Condori Vilca">
+            <font>
+                <Font size="24.0" />
+            </font></Label>
+        <Separator layoutX="23.0" layoutY="153.0" prefHeight="10.0" prefWidth="807.0" />
+        <Separator layoutX="383.0" layoutY="162.0" orientation="VERTICAL" prefHeight="507.0" prefWidth="2.0" />
+        <Pane layoutX="388.0" layoutY="437.0" prefHeight="225.0" prefWidth="465.0">
+            <children>
+                <TableView fx:id="tablaPartidas" layoutX="5.0" layoutY="14.0" prefHeight="206.0" prefWidth="456.0">
+                    <columns>
+                        <TableColumn fx:id="colNumeroPartida" prefWidth="75.0" text="PARTIDA" />
+                        <TableColumn fx:id="colJugador1" prefWidth="72.5999755859375" text="JUGADOR 1" />
+                        <TableColumn fx:id="colJugador2" prefWidth="77.79998779296875" text="JUGADOR 2" />
+                        <TableColumn fx:id="colGanador" prefWidth="68.0" text="GANADOR " />
+                        <TableColumn fx:id="colPuntuacion" prefWidth="95.0" text="PUNTUACION " />
+                        <TableColumn fx:id="colEstado" prefWidth="69.0" text="ESTADO " />
+                    </columns>
+                    <opaqueInsets>
+                        <Insets right="4.0" />
+                    </opaqueInsets>
+                </TableView>
+            </children>
+      </Pane>
+    </children>
+</AnchorPane>
